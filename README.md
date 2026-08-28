@@ -49,3 +49,7 @@ The following libraries are used:
 - [Cyclopts](https://cyclopts.readthedocs.io/en/stable/) provides typed command-line parsing and Rich-formatted help and errors.
 - PyOTP builds standards-compatible `otpauth://` provisioning URIs and implements RFC 6238 TOTP.
 - [qrcode](https://pypi.org/project/qrcode/) is a pure-Python QR generator with built-in ASCII terminal output via `print_ascii`.
+
+## Development note
+
+Parts of this codebase were created with AI assistance; not all of it was.
