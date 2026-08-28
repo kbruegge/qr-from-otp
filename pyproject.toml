@@ -1,0 +1,28 @@
+[project]
+name = "qr-from-otp"
+version = "0.1.1"
+description = "Generate terminal QR codes for TOTP secrets"
+readme = "README.md"
+authors = [
+    { name = "Kai Bruegge", email = "hidden" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "cyclopts>=3,<4",
+    "pyotp>=2.10,<3",
+    "qrcode>=8.2,<9",
+    "rich>=13,<16",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8,<9",
+]
+
+[project.scripts]
+qr-from-otp = "qr_from_otp.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
+
